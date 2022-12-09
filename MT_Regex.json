@@ -1,0 +1,7 @@
+[
+{
+"Regex_Name": "Ads V1",
+"Regex_Search_Codes" : "Jskhccsyky",
+"Regex_Replace_Codes" : "$1\n\nreturn-void"
+}
+]
