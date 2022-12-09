@@ -1,7 +1,12 @@
 [
 {
 "Regex_Name": "Ads V1",
-"Regex_Search_Codes" : "(\.method\s(public|private|static)\s\b(?!\babstract|native\b)(.*)?loadAd\(.*\)V)",
+"Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)V)",
 "Regex_Replace_Codes" : "$1\n\nreturn-void"
+},
+{
+"Regex_Name": "Ads V2",
+"Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)Z)",
+"Regex_Replace_Codes" : "$1\n\nconst/4 v0, 0x0\n\nreturn v0"
 }
 ]
