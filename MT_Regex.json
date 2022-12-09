@@ -1,7 +1,7 @@
 [
 {
 "Regex_Name": "Ads V1",
-"Regex_Search_Codes" : "Jskhccsyky",
+"Regex_Search_Codes" : "(\.method\s(public|private|static)\s\b(?!\babstract|native\b)(.*)?loadAd\(.*\)V)",
 "Regex_Replace_Codes" : "$1\n\nreturn-void"
 }
 ]
