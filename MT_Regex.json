@@ -1,12 +1,22 @@
 [
 {
-"Regex_Name": "Ads V1",
+"Regex_Name": "Remove Ads Regex v1 (From Ads Regex Apk)",
 "Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)V)",
 "Regex_Replace_Codes" : "$1\n\nreturn-void"
 },
 {
-"Regex_Name": "Ads V2",
+"Regex_Name": "Remove Ads Regex v2 (From Ads Regex Apk)",
 "Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)Z)",
 "Regex_Replace_Codes" : "$1\n\nconst/4 v0, 0x0\n\nreturn v0"
+},
+{
+"Regex_Name" :"Remove Ads Regex v3 (From Ads Regex Apk)",
+"Regex_Search_Codes" : "(invoke.*loadAd\\(.*\\)[VZ])",
+"Regex_Replace_Codes" : "#$1"
+},
+{
+"Regex_Name" : "Remove Ads Regex v4 (From Ads Regex Apk)",
+"Regex_Search_Codes" : "(invoke.*gms.*\\>(loadUrl|loadDataWithBaseURL|requestInterstitialAd|showInterstitial|showVideo|showAd|loadData|onAdClicked|onAdLoaded|isLoading|loadAds|AdLoader|AdRequest|AdListener|AdView).*V)",
+"Regex_Replace_Codes" : "#$1"
 }
 ]
