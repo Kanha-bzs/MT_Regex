@@ -1,27 +1,27 @@
 [
 {
-"Regex_Name": "Remove Ads Regex v9",
+"Regex_Name": "Remove Ads v9",
 "Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)V)",
 "Regex_Replace_Codes" : "$1\n\nreturn-void"
 },
 {
-"Regex_Name": "Remove Ads Regex v8",
+"Regex_Name": "Remove Ads v8",
 "Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)Z)",
 "Regex_Replace_Codes" : "$1\n\nconst/4 v0, 0x0\n\nreturn v0"
 },
 {
-"Regex_Name" :"Remove Ads Regex v7",
+"Regex_Name" :"Remove Ads v7",
 "Regex_Search_Codes" : "(invoke.*loadAd\\(.*\\)[VZ])",
 "Regex_Replace_Codes" : "#$1"
 },
 {
-"Regex_Name" : "Remove Ads Regex v6",
+"Regex_Name" : "Remove Ads v6",
 "Regex_Search_Codes" : "(invoke.*gms.*\\>(loadUrl|loadDataWithBaseURL|requestInterstitialAd|showInterstitial|showVideo|showAd|loadData|onAdClicked|onAdLoaded|isLoading|loadAds|AdLoader|AdRequest|AdListener|AdView).*V)",
 "Regex_Replace_Codes" : "#$1"
 },
 {
 "Regex_Name" : "Remove Ads v5",
-"Regex_Search_Codes" : "\\\"(http.*|//.*)(61\\.145\\.124\\.238|\\-ads\\.|\\.ad\\.|\\.ads\\.|\\.analytics\\.localytics\\.com|\\.mobfox\\.com|\\.mp\\.mydas\\.mobi|\\.plus1\\.wapstart\\.ru|\\.scorecardresearch\\.com|\\.startappservice\\.com|\\/ad\\.|\\/ads|ad\\-mail|ad\\.*\\_logging|ad\\.api\\.kaffnet\\.com|adc3\\-launch|adcolony|adinformation|adkmob|admax|admob|admost|adsafeprotected|adservice|adtag|advert|adwhirl|adz\\.wattpad\\.com|alta\\.eqmob\\.com|amazon\\-*ads|amazon\\.*ads|amobee|analytics|applovin|applvn|appnext|appodeal|appsdt|appsflyer|burstly|cauly|cloudfront|com\\.google\\.android\\.gms\\.ads\\.identifier\\.service\\.START|crashlytics|crispwireless|doubleclick|dsp\\.batmobil\\.net|duapps|dummy|flurry|gad|getads|google\\.com\\/dfp|googleAds|googleads|googleapis\\.*\\.ad\\-*|googlesyndication|googletagmanager|greystripe|gstatic|inmobi|inneractive|jumptag|live\\.chartboost\\.com|madnet|millennialmedia|moatads|mopub|native\\_ads|pagead|pubnative|smaato|supersonicads|tapas|tapjoy|unityads|vungle|zucks).*\\\"",
+"Regex_Search_Codes" : "\"(http.*|//.*)(61.145.124.238|-ads.|.ad.|.ads.|.analytics.localytics.com|.mobfox.com|.mp.mydas.mobi|.plus1.wapstart.ru|.scorecardresearch.com|.startappservice.com|/ad.|/ads|ad-mail|ad.*_logging|ad.api.kaffnet.com|adc3-launch|adcolony|adinformation|adkmob|admax|admob|admost|adsafeprotected|adservice|adtag|advert|adwhirl|adz.wattpad.com|alta.eqmob.com|amazon-*ads|amazon.*ads|amobee|analytics|applovin|applvn|appnext|appodeal|appsdt|appsflyer|burstly|cauly|cloudfront|com.google.android.gms.ads.identifier.service.START|crashlytics|crispwireless|doubleclick|dsp.batmobil.net|duapps|dummy|flurry|gad|getads|google.com/dfp|googleAds|googleads|googleapis.*.ad-*|googlesyndication|googletagmanager|greystripe|gstatic|inmobi|inneractive|jumptag|live.chartboost.com|madnet|millennialmedia|moatads|mopub|native_ads|pagead|pubnative|smaato|supersonicads|tapas|tapjoy|unityads|vungle|zucks).*\"",
 "Regex_Replace_Codes" : "\"=\""
 },
 {
