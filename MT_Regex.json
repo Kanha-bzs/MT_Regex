@@ -18,5 +18,30 @@
 "Regex_Name" : "Remove Ads Regex v4 (From Ads Regex Apk)",
 "Regex_Search_Codes" : "(invoke.*gms.*\\>(loadUrl|loadDataWithBaseURL|requestInterstitialAd|showInterstitial|showVideo|showAd|loadData|onAdClicked|onAdLoaded|isLoading|loadAds|AdLoader|AdRequest|AdListener|AdView).*V)",
 "Regex_Replace_Codes" : "#$1"
+},
+{
+"Regex_Name" : "Remove Ads v5",
+"Regex_Search_Codes" : "\\\"(http.*|//.*)(61\\.145\\.124\\.238|\\-ads\\.|\\.ad\\.|\\.ads\\.|\\.analytics\\.localytics\\.com|\\.mobfox\\.com|\\.mp\\.mydas\\.mobi|\\.plus1\\.wapstart\\.ru|\\.scorecardresearch\\.com|\\.startappservice\\.com|\\/ad\\.|\\/ads|ad\\-mail|ad\\.*\\_logging|ad\\.api\\.kaffnet\\.com|adc3\\-launch|adcolony|adinformation|adkmob|admax|admob|admost|adsafeprotected|adservice|adtag|advert|adwhirl|adz\\.wattpad\\.com|alta\\.eqmob\\.com|amazon\\-*ads|amazon\\.*ads|amobee|analytics|applovin|applvn|appnext|appodeal|appsdt|appsflyer|burstly|cauly|cloudfront|com\\.google\\.android\\.gms\\.ads\\.identifier\\.service\\.START|crashlytics|crispwireless|doubleclick|dsp\\.batmobil\\.net|duapps|dummy|flurry|gad|getads|google\\.com\\/dfp|googleAds|googleads|googleapis\\.*\\.ad\\-*|googlesyndication|googletagmanager|greystripe|gstatic|inmobi|inneractive|jumptag|live\\.chartboost\\.com|madnet|millennialmedia|moatads|mopub|native\\_ads|pagead|pubnative|smaato|supersonicads|tapas|tapjoy|unityads|vungle|zucks).*\\\"",
+"Regex_Replace_Codes" : "\"=\""
+},
+{
+"Regex_Name" : "Remove Ads v6",
+"Regex_Search_Codes" : "ca-app-pub-\\d{16}/\\d{10}",
+"Regex_Replace_Codes" : "ca-app-pub-0000000000000000/0000000000"
+},
+{
+"Regex_Name" : "Remove Ads v7",
+"Regex_Search_Codes" : "invoke-.*\\{.*\\}, L.*;->(loadAd|requestNativeAd|showInterstitial|fetchad|fetchads|onadloaded|requestInterstitialAd|showAd|loadAds|AdRequest|requestBannerAd|loadNextAd|createInterstitialAd|setNativeAd|loadBannerAd|loadNativeAd|loadRewardedAd|loadRewardedInterstitialAd|loadAds|loadAdViewAd|showInterstitialAd|shownativead|showbannerad|showvideoad|onAdFailedToLoad)\\(.*\\)V",
+"Regex_Replace_Codes" : "nop"
+},
+{
+"Regex_Name" : "Remove Ads v8",
+"Regex_Search_Codes" : "invoke-*.* \\{*.*\\}, Lcom*.*;->requestInterstitialAd\\(*.*\\)V|invoke-*.* \\{*.*\\}, Lcom*.*;->loadAds\\(*.*\\)V|invoke-*.* \\{*.*\\}, Lcom*.*;->loadAd\\(*.*\\)V|invoke-*.* \\{*.*\\}, Lcom*.*;->requestBannerAd\\(*.*\\)V|invoke-*.*\\s\\{[v|p]\\d\\},\\sLcom/facebook*.*\\;\\-\\>show\\(*.*\\)V|invoke-*.*\\s\\{[v|p]\\d\\},\\sLcom/google*.*\\;\\-\\>show\\(*.*\\)V",
+"Regex_Replace_Codes" : "nop"
+},
+{
+"Regex_Name" : "Remove Ads v9",
+"Regex_Search_Codes" : "(\\.method.*(loadAd|requestNativeAd|showInterstitial|fetchad|fetchads|onadloaded|requestInterstitialAd|showAd|loadAds|AdRequest|requestBannerAd|loadNextAd|createInterstitialAd|setNativeAd|loadBannerAd|loadNativeAd|loadRewardedAd|loadRewardedInterstitialAd|loadAds|loadAdViewAd|showInterstitialAd|shownativead|showbannerad|showvideoad|onAdFailedToLoad)\\(.*\\)V     \\.registers \\d+)[\\s\\S]*?\\.end method",
+"Regex_Replace_Codes" : "#"
 }
 ]
