@@ -1,5 +1,40 @@
 [
 {
+"Regex_Name": "Remove Ads v15",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>(.*(load|show).*)\\(.*\\)Z\\n\\n\\s{4})move-result\\s([pv]\\d+)",
+"Regex_Replace_Codes" : "const/4 $6, 0x0"
+},
+{
+"Regex_Name": "Remove Ads v14",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>(.*(load|show).*)\\(.*\\)V)",
+"Regex_Replace_Codes" : "nop"
+},
+{
+"Regex_Name": "Remove Ads v13",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Deactiv|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop|Throw)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>(request.*|(.*(activat|Banner|build|Event|exec|header|html|initAd|initi|JavaScript|Interstitial|load|log|MetaData|metri|Native|(can|get|is|has|was)Ad|propert|report|response|Rewarded|show|trac|url|(fetch|refresh|render|video)Ad).*)|.*Request)\\(.*\\)Z\\n\\n\\s{4})move-result\\s([pv]\\d+)",
+"Regex_Replace_Codes" : "const/4 $9, 0x0"
+},
+{
+"Regex_Name": "Remove Ads v12",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Deactiv|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop|Throw)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>(request.*|(.*(activat|Banner|build|Event|exec|header|html|initAd|initi|JavaScript|Interstitial|load|log|MetaData|metri|Native|onAd|propert|report|response|Rewarded|show|trac|url|(fetch|refresh|render|video)Ad).*)|.*Request)\\(.*\\)V)",
+"Regex_Replace_Codes" : "nop"
+},
+{
+"Regex_Name": "Remove Ads v12",
+"Regex_Search_Codes" : "\"(http.*|//.*)(61\\.145\\.124\\.238|/2mdn\\.net|-ads\\.|\\.5rocks\\.io|\\.ad\\.|\\.adadapted|\\.admitad\\.|\\.admost\\.|\\.ads\\.|\\.aerserv\\.|\\.airpush\\.|\\.batmobil\\.|\\.chartboost\\.|\\.cloudmobi\\.|\\.conviva\\.|\\.dov-e\\.com|\\.fyber\\.|\\.mng-ads\\|\\.mydas\\.|\\.predic\\.|\\.talkingdata\\.|\\.tapdaq\\.|\\.tele\\.fm|\\.unity3d\\.|\\.unity\\.|\\.wapstart\\.|\\.xdrig\\.|\\.zapr\\.|\\/ad\\.|\\/ads|a4\\.tl|accengage|ad4push|ad4screen|ad-mail|ad\\..*_logging|ad\\.api\\.kaffnet\\.|ad\\.cauly\\.co\\.|adbuddiz|adc3-launch|adcolony|adfurikun|adincube|adinformation|adkmob|admax\\.|admixer|admob|admost|ads\\.mdotm\\.|adsafeprotected|adservice|adsmogo|adsrvr|adswizz|adtag|adtech\\.de|advert|adwhirl|adz\\.wattpad\\.|alimama\\.|alta\\.eqmob\\.|amazon-.*ads|amazon\\..*ads|amobee|analytics|anvato|appboy|appbrain|applovin|applvn|appmetrica|appnext|appodeal|appsdt|appsflyer|apsalar|avocarrot|axonix|banners-slb\\.mobile\\.yandex\\.net|banners\\.mobile\\.yandex\\.net|brightcove\\.|burstly|cauly|cloudfront|cmcm\\.|com\\.google\\.android\\.gms\\.ads\\.identifier\\.service\\.START|comscore|contextual\\.media\\.net|crashlytics|crispwireless|criteo\\.|dmtry\\.|doubleclick|duapps|dummy|flurry|fwmrm|gad|getads|gimbal|glispa|google\\.com\\/dfp|googleAds|googleads|googleapis\\..*\\.ad-.*|googlesyndication|googletagmanager|greystripe|gstatic|heyzap|hyprmx|iasds01|inmobi|inneractive|instreamatic|integralads|jumptag|jwpcdn|jwpltx|jwpsrv|kochava|localytics|madnet|mapbox|mc\\.yandex\\.ru|media\\.net|metrics\\.|millennialmedia|mixpanel|mng-ads\\.com|moat\\.|moatads|mobclix|mobfox|mobpowertech|moodpresence|mopub|native_ads|nativex\\.|nexage\\.|ooyala|openx\\.|pagead|pingstart|prebid|presage\\.io|pubmatic|pubnative|rayjump|saspreview|scorecardresearch|smaato|smartadserver|sponsorpay|startappservice|startup\\.mobile\\.yandex\\.net|statistics\\.videofarm\\.daum\\.net|supersonicads|taboola|tapas|tapjoy|tapylitics|target\\.my\\.com|teads\\.|umeng|unityads|vungle|zucks).*\"",
+"Regex_Replace_Codes" : ""127.0.0.1""
+},
+{
+"Regex_Name": "Remove Ads v11",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>((.*(Banner|initAd|Interstitial|load|Native|(can|get|has|is|was)Ad|Rewarded|show|(fetch|refresh|render|request|video)Ad).*))\\(.*\\)Z\\n\\n\\s{4})move-result\\s([pv]\\d+)",
+"Regex_Replace_Codes" : "const/4 $9, 0x0"
+},
+{
+"Regex_Name": "Remove Ads v10",
+"Regex_Search_Codes" : "(invoke(?!.*(close|Destroy|Dismiss|Disabl|error|player|remov|expir|fail|hide|skip|stop)).*/(adcolony|admob|ads|adsdk|aerserv|appbrain|applovin|appodeal|appodealx|appsflyer|bytedance/sdk/openadsdk|chartboost|flurry|fyber|hyprmx|inmobi|ironsource|mbrg|mbridge|mintegral|moat|mobfox|mobilefuse|mopub|my/target|ogury|Omid|onesignal|presage|smaato|smartadserver|snap/adkit|snap/appadskit|startapp|taboola|tapjoy|tappx|vungle)/.*>((.*(Banner|initAd|Interstitial|load|Native|onAd|Rewarded|show|(fetch|refresh|render|request|video)Ad).*))\\(.*\\)V)",
+"Regex_Replace_Codes" : "nop"
+},
+{
 "Regex_Name": "Remove Ads v9",
 "Regex_Search_Codes" : "(\\.method\\s(public|private|static)\\s\\b(?!\\babstract|native\\b)(.*)?loadAd\\(.*\\)V)",
 "Regex_Replace_Codes" : "$1\n\nreturn-void"
